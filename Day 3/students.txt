@@ -1,0 +1,3 @@
+1, Kathan, B.E
+2, Aditya, B.Com
+3, Alice, B.Sc
