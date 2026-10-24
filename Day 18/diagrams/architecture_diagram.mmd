@@ -1,0 +1,13 @@
+flowchart TD
+    CU(["Customer"]) <--> CI["Chat Interface"]
+    CI <--> AO["Agent Orchestrator"]
+    AO <--> LM["Language Model"]
+    AO <--> PL["Planner and Workflow Controller"]
+    AO --> SEC["Security, Validation and Access Checks"]
+    SEC --> CI
+    PL <--> RAO["Reason-Act-Observe Loop"]
+    RAO <--> FAQ[("FAQ and Policy Knowledge Base")]
+    RAO <--> ORD["Authorized Order Service"]
+    RAO <--> RET["Return Policy / Eligibility Service"]
+    RAO --> TKT["Support Ticket Service"]
+    TKT --> HUM["Human Support Team"]

@@ -1,0 +1,15 @@
+flowchart TD
+    A(["Customer submits query"]) --> B["Identify intent"]
+    B --> C["Plan next action"]
+    C --> D{"Is a tool needed?"}
+    D -- "No" --> H["Prepare response from approved information"]
+    D -- "Yes" --> E["Select and call authorized tool"]
+    E --> F["Observe and validate tool result"]
+    F --> G{"Resolved and reliable?"}
+    G -- "Yes" --> H
+    G -- "No" --> I["Create support ticket if available"]
+    I --> J["Human support handoff"]
+    J --> K["Inform customer of escalation"]
+    H --> L["Send response"]
+    L --> M(["End"])
+    K --> M
