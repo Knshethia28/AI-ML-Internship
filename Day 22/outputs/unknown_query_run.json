@@ -1,0 +1,51 @@
+{
+  "query": "Explain quantum entanglement",
+  "answer": "I couldn't find a matching answer in the available ShopEase help articles. Please contact ShopEase customer support with your order number so a team member can check the case.",
+  "status": "completed",
+  "research_results": [],
+  "analysis": {
+    "summary": "No matching article was found in the local knowledge base.",
+    "key_points": [],
+    "sources": [],
+    "confidence": "low",
+    "needs_human_help": true
+  },
+  "critique": {
+    "approved": true,
+    "issues": []
+  },
+  "revision_count": 0,
+  "trace": [
+    {
+      "agent": "Coordinator",
+      "action": "start",
+      "details": "Created shared state and accepted the user query."
+    },
+    {
+      "agent": "Research Agent",
+      "action": "retrieve",
+      "details": "Retrieved 0 matching local article(s)."
+    },
+    {
+      "agent": "Analyzer",
+      "action": "analyze",
+      "details": "Prepared 0 key point(s); confidence=low."
+    },
+    {
+      "agent": "Writer",
+      "action": "draft",
+      "details": "Created a response grounded in Analyzer output."
+    },
+    {
+      "agent": "Critic",
+      "action": "review",
+      "details": "Approved draft."
+    },
+    {
+      "agent": "Coordinator",
+      "action": "finish",
+      "details": "Workflow ended with status=completed."
+    }
+  ],
+  "generated_at_utc": "2026-10-29T06:40:13.918051+00:00"
+}

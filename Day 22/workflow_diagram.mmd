@@ -1,0 +1,15 @@
+flowchart TD
+    U[User query] --> C[Coordinator]
+    C --> S[(Shared State)]
+    C --> R[Research Agent]
+    R -->|research_results| S
+    S --> A[Analyzer]
+    A -->|analysis| S
+    S --> W[Writer]
+    W -->|draft| S
+    S --> K[Critic]
+    K -->|critique| S
+    S --> C
+    C -->|approved| F[Final answer + JSON trace]
+    C -->|issues and retry available| W
+    C -->|no evidence| H[Human support fallback]

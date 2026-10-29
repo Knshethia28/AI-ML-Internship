@@ -1,0 +1,62 @@
+{
+  "query": "My order delivery is late",
+  "answer": "Here is the guidance available for your question:\n\n- Open Orders in your ShopEase account and select the order to review its latest tracking status and estimated delivery date. Carrier updates may take time to appear.\n\nReference article(s): Late or delayed orders.\nIf these steps do not resolve the issue, contact ShopEase customer support and include your order number.",
+  "status": "completed",
+  "research_results": [
+    {
+      "id": "KB-001",
+      "title": "Late or delayed orders",
+      "keywords": "late delayed delivery tracking shipment order status courier",
+      "content": "Open Orders in your ShopEase account and select the order to review its latest tracking status and estimated delivery date. Carrier updates may take time to appear."
+    }
+  ],
+  "analysis": {
+    "summary": "Open Orders in your ShopEase account and select the order to review its latest tracking status and estimated delivery date. Carrier updates may take time to appear.",
+    "key_points": [
+      "Open Orders in your ShopEase account and select the order to review its latest tracking status and estimated delivery date. Carrier updates may take time to appear."
+    ],
+    "sources": [
+      "Late or delayed orders"
+    ],
+    "confidence": "medium",
+    "needs_human_help": false
+  },
+  "critique": {
+    "approved": true,
+    "issues": []
+  },
+  "revision_count": 0,
+  "trace": [
+    {
+      "agent": "Coordinator",
+      "action": "start",
+      "details": "Created shared state and accepted the user query."
+    },
+    {
+      "agent": "Research Agent",
+      "action": "retrieve",
+      "details": "Retrieved 1 matching local article(s)."
+    },
+    {
+      "agent": "Analyzer",
+      "action": "analyze",
+      "details": "Prepared 1 key point(s); confidence=medium."
+    },
+    {
+      "agent": "Writer",
+      "action": "draft",
+      "details": "Created a response grounded in Analyzer output."
+    },
+    {
+      "agent": "Critic",
+      "action": "review",
+      "details": "Approved draft."
+    },
+    {
+      "agent": "Coordinator",
+      "action": "finish",
+      "details": "Workflow ended with status=completed."
+    }
+  ],
+  "generated_at_utc": "2026-10-29T06:40:13.200117+00:00"
+}
