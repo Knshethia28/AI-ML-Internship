@@ -1,0 +1,15 @@
+flowchart TD
+    U[User query] --> C[Coordinator node]
+    C --> R[Research Agent node]
+    R -->|research_results| A[Analyzer node]
+    A -->|analysis| W[Writer node]
+    W -->|draft| K[Critic node]
+    K -->|approved| F[Finalize]
+    K -->|issues and retry available| V[Coordinator revision node]
+    V -->|revision note| W
+    K -->|retry limit reached| F
+    R -->|error| F
+    A -->|error| F
+    W -->|error| F
+    K -->|error| F
+    F --> O[Final answer and communication log]
