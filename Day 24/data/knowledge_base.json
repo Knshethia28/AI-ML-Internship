@@ -1,0 +1,26 @@
+[
+  {
+    "id": "KB-001",
+    "title": "Late or delayed orders",
+    "keywords": "late delayed delivery tracking shipment order status courier",
+    "content": "Open Orders in your ShopEase account and select the order to review its latest tracking status and estimated delivery date. Carrier updates may take time to appear."
+  },
+  {
+    "id": "KB-002",
+    "title": "Returns and refunds",
+    "keywords": "return refund damaged wrong item eligibility return window",
+    "content": "Open the order details and choose Return or Refund if the option is available. Follow the displayed instructions and retain the return confirmation until the refund is processed."
+  },
+  {
+    "id": "KB-003",
+    "title": "Contacting customer support",
+    "keywords": "contact support help representative order number escalation problem",
+    "content": "If self-service steps do not resolve the issue, contact ShopEase customer support and provide the order number, a short description of the problem, and any relevant tracking or return reference."
+  },
+  {
+    "id": "KB-004",
+    "title": "Cancelling an order",
+    "keywords": "cancel cancellation order dispatch shipped",
+    "content": "Open the order details and check whether Cancel Order is available. If the order has already been dispatched, cancellation may no longer be available; contact customer support for the available options."
+  }
+]

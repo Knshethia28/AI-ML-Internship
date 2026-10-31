@@ -57,6 +57,9 @@ faiss_index/
 *.h5
 *.tflite
 *.ckpt
+*.joblib
+*.pkl
+*.pickle
 
 # ==============================================================================
 # Experiment Tracking, Model Caches & Local LLMs
@@ -109,8 +112,20 @@ htmlcov/
 # Temporary Files, Logs & Document Uploads
 # ==============================================================================
 *.log
+logs/
+**/logs/
 uploads/
 **/uploads/
 temp/
 tmp/
+
+# ==============================================================================
+# Archives & Compressed Files
+# ==============================================================================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
 
