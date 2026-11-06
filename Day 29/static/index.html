@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a2d">
+  <title>ShopEase — Customer Support</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">S</div>
+        <div><strong>ShopEase</strong><span>Customer care</span></div>
+      </div>
+      <button class="new-chat" id="newChatBtn"><span>＋</span> New conversation</button>
+      <div class="side-section">
+        <p class="side-label">QUICK HELP</p>
+        <button class="quick-link" data-prompt="How can I track my delayed order?"><span>↗</span> Track an order</button>
+        <button class="quick-link" data-prompt="How do I return a damaged item?"><span>↩</span> Returns & refunds</button>
+        <button class="quick-link" data-prompt="How can I cancel an order?"><span>×</span> Cancel an order</button>
+        <button class="quick-link" data-prompt="Show me smartphones"><span>▦</span> Browse products</button>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="status-dot"></div>
+        <div><strong>Support assistant online</strong><span>Demo environment</span></div>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div class="mobile-brand"><div class="brand-mark">S</div><strong>ShopEase</strong></div>
+        <div class="topbar-title"><span class="status-dot"></span><div><strong>ShopEase Assistant</strong><small>Usually replies in a few seconds</small></div></div>
+        <button class="top-action" id="supportBtn">Contact support <span>↗</span></button>
+      </header>
+
+      <section class="chat-area" id="chatArea" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <div class="welcome-icon">✦</div>
+          <p class="eyebrow">WELCOME TO SHOPEASE</p>
+          <h1>How can we help<br>you today?</h1>
+          <p class="welcome-copy">Ask about an order, a return, or find something from our product catalogue.</p>
+          <div class="suggestion-grid">
+            <button class="suggestion" data-prompt="My order delivery is late"><span>📦</span><strong>Where's my order?</strong><small>Tracking and delivery help</small></button>
+            <button class="suggestion" data-prompt="How do I get a refund for a damaged item?"><span>↩</span><strong>Returns & refunds</strong><small>Get help with an item</small></button>
+            <button class="suggestion" data-prompt="Show me laptops"><span>⌕</span><strong>Explore products</strong><small>Search the demo catalogue</small></button>
+            <button class="suggestion" data-prompt="I need help with something else"><span>♡</span><strong>Something else</strong><small>Tell us what's going on</small></button>
+          </div>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="typing hidden" id="typing"><span></span><span></span><span></span><small>ShopEase is thinking</small></div>
+      </section>
+
+      <footer class="composer-wrap">
+        <form class="composer" id="chatForm">
+          <textarea id="messageInput" rows="1" maxlength="1000" placeholder="Message ShopEase..." aria-label="Your message"></textarea>
+          <button class="send-btn" id="sendBtn" type="submit" aria-label="Send message">↑</button>
+        </form>
+        <div class="composer-note"><span>ShopEase uses a demonstration product catalogue.</span><span>AI responses may need verification.</span></div>
+      </footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="supportModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+      <div class="modal-icon">♡</div>
+      <p class="eyebrow">WE'RE HERE TO HELP</p>
+      <h2 id="modalTitle">Request human support</h2>
+      <p class="modal-copy">Tell us a little about the issue. A demo support ticket will be saved so it can be reviewed.</p>
+      <form id="supportForm">
+        <label>Your name <input id="customerName" maxlength="100" placeholder="Name (optional)"></label>
+        <label>Email address <input id="customerEmail" type="email" maxlength="254" placeholder="you@example.com (optional)"></label>
+        <label>How can we help? <textarea id="supportQuery" required minlength="3" maxlength="2000" rows="4" placeholder="Describe your issue..."></textarea></label>
+        <button class="primary-btn" type="submit" id="submitSupport">Submit support request</button>
+      </form>
+      <div class="ticket-result hidden" id="ticketResult"></div>
+    </div>
+  </div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
